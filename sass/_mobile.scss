@@ -1,0 +1,117 @@
+
+
+//
+@media(max-width: 800px) {
+    #header {
+        .main-nav {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            .second-name {
+                display: none;
+            }
+        }
+        
+    }
+
+    #section {
+        &-a {
+            .section-logos {
+                 grid-template-columns: 1fr;
+                 justify-content: center;
+                 align-items: center;
+                 div {
+                     margin-bottom: 2rem;
+                     img {
+                         
+                          width: 80% ;
+                          height: 100%;
+                     }
+                 }
+            }
+        }
+        &-b {
+                .client-info {
+                    grid-template-columns: 1fr;
+                    justify-content: center;
+                    text-align: center;
+                    grid-gap: 2rem;
+                    div{
+                        margin-bottom: 1rem;
+                        img {
+                            display: inline-block;
+                        }
+                    }
+                }
+        }
+    }
+}
+
+//smart phones
+@media(max-width: 500px) {
+    #header {
+        .header-content {
+            height: 50vh;
+            .title-page {
+                font-size: 2.5rem;
+            }
+        }
+    }
+    #section {
+         &-a {
+            .section-logos {
+                 div {
+                     margin-top: 0;
+                     img {
+                         
+                          width: 80% ;
+                          height: 100%;
+                     }
+                 }
+            }
+        }
+        &-c {
+            .founder {
+                flex-direction: column;
+                &-info {
+                    margin: 0;
+                    text-align: center;
+                }
+            }
+        }
+        &-d {
+            .contact {
+                flex-direction: column;
+            }
+        }
+    }
+
+    .items {
+        grid-template-columns: 1fr;
+    }
+
+    #project {
+        &-b {
+            .contact-info {
+                grid-template-columns: 1fr;
+                div {
+                    padding: 2rem 0;
+                    border-bottom: 0.5px solid $light-color;
+                    &:last-child{
+                        border: none;
+                        padding: 2rem 0 0 0;
+                    }
+                }
+            }
+        }
+        
+    }
+
+    #footer {
+        .footer-content{
+            flex-direction: column;
+            margin-top: 1rem;
+        }
+    }
+}

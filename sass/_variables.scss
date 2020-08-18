@@ -1,0 +1,21 @@
+//partials
+
+$website-width: 1000px;
+$font-family: 'Playfair Display', serif;
+$main-color: #FF090F;
+$light-color: #EEEEEE;
+$medium-color: #ddd;
+$dark-color: #474747;
+$bg-img: url('../img/01.jpg');
+$bg-secondary-img: url('../img/02.jpg');
+
+
+//text color
+@function set-text-color($color) {
+    @if(lightness($color) > 50 ) {
+        //light color
+        @return $dark-color;
+    }@else {
+        @return $light-color;
+    }
+}
