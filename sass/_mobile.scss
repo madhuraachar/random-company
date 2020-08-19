@@ -46,6 +46,24 @@
                 }
         }
     }
+
+        #project {
+        &-b {
+            .contact-info {
+                grid-template-columns: 1fr;
+                div {
+                    flex-direction: column;
+                    padding: 2rem 0;
+                    border-bottom: 0.5px solid $light-color;
+                    &:last-child{
+                        border: none;
+                        padding: 2rem 0 0 0;
+                    }
+                }
+            }
+        }
+        
+    }
 }
 
 //smart phones

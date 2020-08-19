@@ -257,6 +257,17 @@ body {
   grid-template-columns: repeat(3, 1fr);
   text-align: center;
   line-height: 2; }
+  #project-b .contact-info div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem; }
+    #project-b .contact-info div .details {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: 0 2rem; }
 
 #project-c {
   display: flex;
@@ -309,7 +320,16 @@ body {
     #section-b .client-info div {
       margin-bottom: 1rem; }
       #section-b .client-info div img {
-        display: inline-block; } }
+        display: inline-block; }
+  #project-b .contact-info {
+    grid-template-columns: 1fr; }
+    #project-b .contact-info div {
+      flex-direction: column;
+      padding: 2rem 0;
+      border-bottom: 0.5px solid #EEEEEE; }
+      #project-b .contact-info div:last-child {
+        border: none;
+        padding: 2rem 0 0 0; } }
 
 @media (max-width: 500px) {
   #header .header-content {
